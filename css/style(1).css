@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Chunkfive'; /*a name to be used later*/
+    src: url('../fonts/Chunkfive.ttf'); /*URL to font*/
+}
+
+#photobooth {
+  /*background-color: blue;*/
+  width: 35vw;
+  padding-left: 170px;
+  margin-top: 60px;
+    float: left;
+}
+#descriptiontext{
+  font-family: 'Chunkfive';
+  font-size: 55pt;
+  margin-top: 0px;
+  margin-left: -50px;
+}
+#descriptiontext-left{
+  font-family: 'Chunkfive';
+  font-size: 55pt;
+  margin-top: 0px;
+  margin-left: -95px;
+}
+#videobooth {
+  /*background-color: green;*/
+  margin-top: 60px;
+  margin-right: 100px;
+  padding-left: 140px;
+  float: right;
+}

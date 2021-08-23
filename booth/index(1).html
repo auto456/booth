@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gphoto2 wrapper</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.2.js"></script>
+</head>
+
+<body>
+
+<div data-role="whole" id="wholepage">
+<div data-role="page" id="camera">
+
+	<div data-role="header">
+		<h1 id="cameraName"></h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" style="text-align:center" id="snap">
+		<img src="logo.png">
+	</div><!-- /content -->
+
+
+</div>
+
+<div id="photobooth" onclick="takePicture()">
+	<a href="C:\Users\arthu\Desktop\Dateien\booth ui\countdown.html" style="text-decoration: none; color: black"><img src="photo.png" height="400" width="400">
+<p id="descriptiontext">
+<style>
+
+	 #photobooth { color: black; }
+   #videobooth { color: black;}
+ </style>
+
+
+	Take A Picture
+</p>
+</div>
+
+
+<div id="videobooth" onclick="takeVideo()">
+<img src="video.png" height="400" width="400">
+<p id="descriptiontext-left">
+	Leave A Message
+</p>
+</div>
+
+</div>
+</body>
+</html>

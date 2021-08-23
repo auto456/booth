@@ -1,0 +1,28 @@
+<html>
+<script type="text/javascript">
+        function nextImage() {
+            setTimeout(makeItTwo, 1000);
+            setTimeout(makeItOne, 2000);
+            setTimeout(makeItSmile, 3000);
+            setTimeout(startPage, 5000);
+
+        }
+        function makeItTwo(){
+          document.getElementById("countdown").src="2.png";
+        }
+        function makeItOne(){
+          document.getElementById("countdown").src="1.png";
+        }
+        function makeItSmile(){
+          document.getElementById("countdown").src="twinkie.png";
+        }
+        function startPage(){
+          window.location.replace("C:/Users/arthu/Desktop/Dateien/booth ui/index.html");
+        }
+        window.onload = nextImage;
+        </script>
+<body background="background.jpg">
+    <img id="countdown" src="3.png" style= "margin: 0 500 0 0">
+    </img>
+</body>
+</html>

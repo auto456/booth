@@ -1,0 +1,64 @@
+<html>
+
+<head>
+	<title>Photobooth</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.mobile-1.4.2.js"></script>
+</head>
+
+<script type="text/javascript">
+	setTimeout(makeItTwo, 1000);
+	setTimeout(makeItOne, 2000);
+	//change this
+	setTimeout(makeItSmile, 4000);
+	setTimeout(loadingCircle, 4000);
+	setTimeout(startPage, 20000);
+
+	function makeItTwo() {
+		document.getElementById("countdown").src = "../images/2.png";
+	}
+
+	function makeItOne() {
+		document.getElementById("countdown").src = "../images/1.png";
+	}
+
+	function makeItSmile() {
+		document.getElementById("countdown").src = "../images/twinkie.png";
+		$.ajax({
+			type: "POST",
+			crossDomain:true,
+			url: "http://localhost:5000/takePicture",
+		}).done(function (pictureName) {
+			loading("../../thumbnails/"+pictureName)
+		});
+	}
+
+	function loadingCircle() {
+		document.getElementById("countdown").src = "../booth/loading.png";
+		document.getElementById("countdown").style.marginTop = "0px";
+		document.getElementById("countdown").style.marginLeft = "0px";
+		document.getElementById("countdown").style.width = "1280px";
+		document.getElementById("countdown").style.height = "auto";
+	}
+
+
+	function loading(path) {
+		document.getElementById("countdown").src = path;
+	}
+
+	function startPage() {
+		window.location.replace("../index.html");
+	}
+
+</script>
+
+<body style="background-color:black;">
+	<div>
+		<img id="countdown" src="../images/3.png" style="margin: -50 0 0 -320">
+		</img>
+	</div>
+</body>
+
+</html>

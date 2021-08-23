@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+dev=`gphoto2 --auto-detect | grep usb | cut -b 36-42 | sed 's/,/\//'`
+sudo chmod 777 /dev/bus/usb/${dev}
+exit 0

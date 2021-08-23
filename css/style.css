@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Chunkfive'; /*a name to be used later*/
+    src: url('../fonts/Chunkfive.ttf'); /*URL to font*/
+}
+
+#photobooth {
+  /*background-color: blue;*/
+  /* width: 35vw; */
+  padding-left: 425px;
+  padding-right: 125px;
+  margin-top: 0px;
+  padding-bottom: 60px;
+  float: left;
+}
+#descriptiontext{
+  font-family: 'Chunkfive';
+  font-size: 40pt;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+#descriptiontext-left{
+  font-family: 'Chunkfive';
+  font-size: 40pt;
+  margin-top: 0px;
+  margin-left: -40px;
+}
+#videobooth {
+  /*background-color: green;*/
+  width: 35vw;
+  padding-left: 95px;
+  padding-right: 90px;
+  padding-bottom: 60px;
+  float: right;
+}
+
+.descriptiontextVideo{
+  color: white;
+  font-family: 'Chunkfive';
+  font-size: 50vw;
+  margin-top: 200px;
+  margin-left: 34.8vw;
+}
+
+.videoRecBody{
+  background-image: url("/booth/frame1.png");
+  background-size: 1280px 800px;
+}
+
+.videoRecDiv{
+  margin-top: 100px;
+}

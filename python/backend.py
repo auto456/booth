@@ -13,7 +13,8 @@ def takePicture():
     #name = datetime.now().strftime("%d-%m-%Y %H:%M:%S")+".jpg"
     name = "Test.jpg"
     
-    stream = os.popen('sudo gphoto2 --capture-image-and-download --filename="'+directory+name+'" --force-overwrite')
+    # try --keep-raw for download the image but keep the raw on memory card
+    stream = os.popen('sudo gphoto2 --capture-image-and-download --filename="'+directory+name+'" --force-overwrite --keep-raw')
     output = stream.read()
 
     makeThumbNail(directory+name, name)
